@@ -1,1 +1,3 @@
 # falldetection
+# abstract
+Falling is an external aspect that can lead to death for the elderly. With so many activities they can do will increase the likelihood of falling. A fall detection device is designed to minimize post-fall risk. An MPU6050 sensor with 3 axis accelerometer and 3 gyroscope axis is used to detect the activities of the elderly. This research is expected to recognize the falling forward movement, falling aside, falling backward, sitting, sleeping, squatting, upstairs, down stairs and praying. This project module is a combined integration of NodeMCU ESP8266 and MPU6050 for gyroscope and accelerometer for retrieving the fall detection details.

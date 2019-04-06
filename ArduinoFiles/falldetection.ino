@@ -1,21 +1,24 @@
-#include "CayenneDefines.h"
-#include "CayenneWiFi.h"
-#include "CayenneWiFiClient.h"
+
 #include <Wire.h>
 #include <MPU6050.h>
+#define CAYENNE_PRINT Serial
+#include <CayenneMQTTESP8266.h>
 
 MPU6050 mpu;
 
 boolean freefallDetected = false;
 
-char token[] = ""; //fill the token of cayenne
-char ssid[] = ""; //fill with wifi ssid
-char pwd[] = ""; //fill with wifi password
+char ssid[] = "Sakht Launde-5G";
+char wifiPassword[] = "hello3087";
+
+char username[] = "f3ee8980-4e2a-11e9-9622-9b9aeccba453";
+char password[] = "af47a27852e8b4a1c8081e8b9c37c1e080765ff8";
+char clientID[] = "80481ae0-5529-11e9-8da4-359d3972629e";
 
 void setup() 
 {
   Serial.begin(115200);
-  Cayenne.begin(token, ssid, pwd);
+  Cayenne.begin(username, password, clientID, ssid, wifiPassword);
   Serial.println("Initialize MPU6050");
 
   while(!mpu.begin(MPU6050_SCALE_2000DPS, MPU6050_RANGE_16G))
@@ -33,7 +36,7 @@ void setup()
   mpu.setDHPFMode(MPU6050_DHPF_5HZ);
 
   mpu.setFreeFallDetectionThreshold(17);
-  mpu.setFreeFallDetectionDuration(2);	
+  mpu.setFreeFallDetectionDuration(2);  
   
   checkSettings();
   
@@ -109,7 +112,7 @@ void checkSettings()
 
 void loop()
 {
-  Cayenne.run();
+  Cayenne.loop();
 }
 
 CAYENNE_OUT(V8)

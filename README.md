@@ -30,3 +30,8 @@ The main component of the setup is the Nodemcu ESP8266 module. All the other har
 
 * Setup your cayenne dashboard, add a custom widget, choose two state widget and give it name, choose virtual pin V8 for connectivity, and press add widget.
 * Now press the trigger, give trigger's name, on if add the widget added befor, on then fill email with your email, and press save.
+
+# Links to Github and Youtube
+
+Github : https://github.com/sarnaam/falldetection
+Youtube : https://www.youtube.com/watch?v=-hb-8XGw5ZU

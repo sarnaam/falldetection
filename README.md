@@ -36,3 +36,12 @@ The main component of the setup is the Nodemcu ESP8266 module. All the other har
 Github : https://github.com/sarnaam/falldetection
 
 Youtube : https://www.youtube.com/watch?v=-hb-8XGw5ZU
+
+
+# References
+
+https://www.instructables.com/id/Fall-Detection-of-Old-Man-Using-Cayenne/
+
+https://www.youtube.com/watch?v=G6CqvhXpBKM
+
+https://www.youtube.com/watch?v=6YAnqHTm7_o&t=413s
